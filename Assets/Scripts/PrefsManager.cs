@@ -68,7 +68,7 @@ public class PrefsManager : MonoBehaviour
 
     private void SetTimers()
     {
-        for (int i=2; i<8; i++)
+        for (int i=2; i<11; i++)
         {
             switch (i)
             {
@@ -98,9 +98,28 @@ public class PrefsManager : MonoBehaviour
                     break;
 
                 case 7:
+                    //A DEFINIR
                     _2StarsTimer = 10;
                     _3StarsTimer = 9.65f;
                     break;
+
+                case 8:
+                    _2StarsTimer = 10;
+                    _3StarsTimer = 9.65f;
+                    break;
+
+                case 9:
+                    //A DEFINIR
+                    _2StarsTimer = 10;
+                    _3StarsTimer = 9.65f;
+                    break;
+
+                case 10:
+                    //A DEFINIR
+                    _2StarsTimer = 10;
+                    _3StarsTimer = 9.65f;
+                    break;
+
             }
 
             PlayerPrefs.SetFloat("timer2stars" + i, _2StarsTimer);
