@@ -131,7 +131,7 @@ public class PrefsManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("numberOfStars", 0);
 
-        for (int i =2; i<8; i++)
+        for (int i =2; i<11; i++)
         {
             // Get the best time for this level
             MeilleurTemps = PlayerPrefs.GetFloat("timerLevel" + i);
