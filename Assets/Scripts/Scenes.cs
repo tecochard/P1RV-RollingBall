@@ -123,5 +123,41 @@ public class Scenes : MonoBehaviour
             StartCoroutine(PauseMainTheme());
         }
     }
+
+    public void Level3_1()
+    {
+        if (PlayerPrefs.GetInt("levelProgression") >= 8)
+        {
+            SceneManager.LoadScene("Level3_1");
+        }
+        else
+        {
+            StartCoroutine(PauseMainTheme());
+        }
+    }
+
+    public void Level3_2()
+    {
+        if (PlayerPrefs.GetInt("levelProgression") >= 9)
+        {
+            SceneManager.LoadScene("Level3_2");
+        }
+        else
+        {
+            StartCoroutine(PauseMainTheme());
+        }
+    }
+
+    public void Level3_3()
+    {
+        if (PlayerPrefs.GetInt("levelProgression") >= 10)
+        {
+            SceneManager.LoadScene("Level3_3");
+        }
+        else
+        {
+            StartCoroutine(PauseMainTheme());
+        }
+    }
     #endregion
 }

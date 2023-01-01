@@ -8,31 +8,58 @@ public class World2Locked : MonoBehaviour
 {
     private int nbOfStarsNeeded;
     public TextMeshProUGUI TextStarsNeeded;
-    public Button Level4;
-    public Button Level5;
-    public Button Level6;
+    public Button Level1;
+    public Button Level2;
+    public Button Level3;
 
     // Start is called before the first frame update
     void Update()
     {
-        // Show the number of stars needed for World2
-        nbOfStarsNeeded = 6 - PlayerPrefs.GetInt("numberOfStars");
-
-        Debug.Log(nbOfStarsNeeded);
-
-        if (nbOfStarsNeeded > 0)
+        if (this.gameObject.name == "PanelWorld2Locked")
         {
-            TextStarsNeeded.text = "X " + nbOfStarsNeeded;
-            Level4.interactable = false;
-            Level5.interactable = false;
-            Level6.interactable = false;
+            // Show the number of stars needed for World2
+            nbOfStarsNeeded = 6 - PlayerPrefs.GetInt("numberOfStars");
+
+            Debug.Log(nbOfStarsNeeded);
+
+            if (nbOfStarsNeeded > 0)
+            {
+                TextStarsNeeded.text = "X " + nbOfStarsNeeded;
+                Level1.interactable = false;
+                Level2.interactable = false;
+                Level3.interactable = false;
+            }
+            else
+            {
+                this.gameObject.SetActive(false);
+                Level1.interactable = true;
+                Level2.interactable = true;
+                Level3.interactable = true;
+            }
         }
-        else
+
+        if (this.gameObject.name == "PanelWorld3Locked")
         {
-            this.gameObject.SetActive(false);
-            Level4.interactable = true;
-            Level5.interactable = true;
-            Level6.interactable = true;
+            // Show the number of stars needed for World2
+            nbOfStarsNeeded = 12 - PlayerPrefs.GetInt("numberOfStars");
+
+            Debug.Log(nbOfStarsNeeded);
+
+            if (nbOfStarsNeeded > 0)
+            {
+                TextStarsNeeded.text = "X " + nbOfStarsNeeded;
+                Level1.interactable = false;
+                Level2.interactable = false;
+                Level3.interactable = false;
+            }
+            else
+            {
+                this.gameObject.SetActive(false);
+                Level1.interactable = true;
+                Level2.interactable = true;
+                Level3.interactable = true;
+            }
         }
+
     }
 }
