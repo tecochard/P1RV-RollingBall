@@ -44,7 +44,7 @@ public class Jump : MonoBehaviour
         if (Input.touchCount == 1 && IsGrounded() && !enSaut)
         {
             enSaut = true;
-            StartCoroutine(Wait(1));
+            StartCoroutine(Wait(0.5f));
         }
     }
 }
