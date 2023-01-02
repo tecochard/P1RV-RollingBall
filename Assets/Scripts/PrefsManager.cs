@@ -109,15 +109,13 @@ public class PrefsManager : MonoBehaviour
                     break;
 
                 case 9:
-                    //A DEFINIR
-                    _2StarsTimer = 10;
-                    _3StarsTimer = 9.65f;
+                    _2StarsTimer = 7;
+                    _3StarsTimer = 5.5f;
                     break;
 
                 case 10:
-                    //A DEFINIR
-                    _2StarsTimer = 10;
-                    _3StarsTimer = 9.65f;
+                    _2StarsTimer = 30;
+                    _3StarsTimer = 15;
                     break;
 
             }
