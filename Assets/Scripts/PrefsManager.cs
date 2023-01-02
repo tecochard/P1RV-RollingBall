@@ -55,7 +55,7 @@ public class PrefsManager : MonoBehaviour
     public void ResetScore()
     {
         // Reset tous les timers à -1
-        for (int i=0; i < 8; i++)
+        for (int i=0; i < 11; i++)
         {
             PlayerPrefs.SetFloat("timerLevel" + i, -1);
         }
@@ -93,14 +93,13 @@ public class PrefsManager : MonoBehaviour
                     break;
 
                 case 6:
-                    _2StarsTimer = 35;
-                    _3StarsTimer = 30;
+                    _2StarsTimer = 40;
+                    _3StarsTimer = 25;
                     break;
 
                 case 7:
-                    //A DEFINIR
-                    _2StarsTimer = 10;
-                    _3StarsTimer = 9.65f;
+                    _2StarsTimer = 35;
+                    _3StarsTimer = 30;
                     break;
 
                 case 8:
