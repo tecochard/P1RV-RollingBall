@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.013322936, g: 0.012737505, b: 0.013646332, a: 1}
+  m_IndirectSpecularColor: {r: 0.013328173, g: 0.012599277, b: 0.013689107, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -962,6 +962,7 @@ GameObject:
   - component: {fileID: 971860715}
   - component: {fileID: 971860714}
   - component: {fileID: 971860713}
+  - component: {fileID: 971860717}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -1041,12 +1042,25 @@ Transform:
   m_GameObject: {fileID: 971860712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -36.1, y: 0.28, z: 14.65}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &971860717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971860712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 859b966b772f2c940900a09b27b08ccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedRotation: 12
 --- !u!1001 &1126293115
 PrefabInstance:
   m_ObjectHideFlags: 0
