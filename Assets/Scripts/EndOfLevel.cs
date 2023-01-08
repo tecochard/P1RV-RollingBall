@@ -6,11 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class EndOfLevel : MonoBehaviour
 {
-    [SerializeField] GameObject GyroController;
-    [SerializeField] GameObject Fader;
-    [SerializeField] GameObject EndMenu;
-    [SerializeField] TextMeshProUGUI ChronoText;
-    [SerializeField] GameObject HighScoreText;
+    // Script for when the level is finished
+    // saves the timer if it's a new record
+    // shows the EndMenu canvas
+
+    public GameObject GyroController;
+    public GameObject Fader;
+    public GameObject EndMenu;
+    public TextMeshProUGUI ChronoText;
+    public GameObject HighScoreText;
 
     public AudioSource FinishSound;
 

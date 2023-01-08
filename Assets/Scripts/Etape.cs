@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Etape : MonoBehaviour
 {
-    [SerializeField] GameObject EndOfLevel;
+    // Script for the intermediate steps
+    // for levels 1.2 and 2.1
+    public GameObject EndOfLevel;
 
-    // Update is called once per frame
     private void OnTriggerEnter(Collider other)
     {
         EndOfLevel.SetActive(true);

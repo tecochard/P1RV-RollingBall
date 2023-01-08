@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Collision : MonoBehaviour
 {
+    // Script for when the ball falls off the bord
+    // Attached to every sides of the Bounds prefab
+
     [Header("Joueur")]
     public GameObject Player;
     public GameObject GyroController;
