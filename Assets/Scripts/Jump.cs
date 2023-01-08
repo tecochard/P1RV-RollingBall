@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
+    // Script to make the ball jump when the screen is touched
+    // in world 3
+
     private Rigidbody m_playerRig;
     public GameObject Gyroscope;
-    private Collider m_Collider;
     //parametres
     private float distToGround;
     public float jumpForce;
+    private bool jumping = false;
 
 
 
@@ -17,10 +20,7 @@ public class Jump : MonoBehaviour
     void Start()
     {
         m_playerRig = GetComponent<Rigidbody>();
-        m_Collider = GetComponent<Collider>();
         distToGround = 0.51f; //boule de rayon 0.5
-        print("distToGround");
-        print(distToGround);
     }
 
     //Fonction pour savoir si l'on touche le sol
@@ -29,21 +29,21 @@ public class Jump : MonoBehaviour
         return Physics.Raycast(transform.position, -Gyroscope.transform.up, distToGround);
     }
 
-    private bool enSaut = false;
+
     IEnumerator Wait(float seconds)
     {
         m_playerRig.AddForce(Gyroscope.transform.up * jumpForce);
         yield return new WaitForSeconds(seconds);
-        enSaut = false;
+        jumping = false;
     }
     
     // Update is called once per frame
     void Update()
     {
         // Saut
-        if (Input.touchCount == 1 && IsGrounded() && !enSaut)
+        if (Input.touchCount == 1 && IsGrounded() && !jumping)
         {
-            enSaut = true;
+            jumping = true;
             StartCoroutine(Wait(0.5f));
         }
     }
