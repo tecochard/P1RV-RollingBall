@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AutoDestruct : MonoBehaviour
+public class FaderInDesactivation : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Script to desactivate the FaderIn after 1 seconde
     private float temps;
     void Start()
     {
