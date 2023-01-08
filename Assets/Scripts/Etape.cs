@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Etape : MonoBehaviour
 {
-    // Script for the intermediate steps
-    // for levels 1.2 and 2.1
+    // Script for the intermediate step
+    // for level 1.2
     public GameObject EndOfLevel;
 
     private void OnTriggerEnter(Collider other)
