@@ -6,9 +6,11 @@ using UnityEngine.UI;
 
 public class StarsManager : MonoBehaviour
 {
+    // Script to show the right amount of stars for each level in the PlayMenu
+
     public Sprite Star0; // jamais fini
     public Sprite Star1; // niveau fini
-    public Sprite Star2; // niveau fini, en-dessous du temps correspondant au niveau
+    public Sprite Star2; // niveau fini assez vite
     public Sprite Star3; // niveau fini très vite
 
     private string Pannel;

@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class Scenes : MonoBehaviour
 {
-    [SerializeField] AudioSource Nononon;
-    [SerializeField] AudioSource MainTheme;
-    [SerializeField] GameObject PanelLevelLocked;
+    // Script to manage the passage from different scenes
+
+    public AudioSource Nononon;
+    public AudioSource MainTheme;
+    public GameObject PanelLevelLocked;
 
     private int thisScene;
 
@@ -117,6 +119,42 @@ public class Scenes : MonoBehaviour
         if (PlayerPrefs.GetInt("levelProgression") >= 7)
         {
             SceneManager.LoadScene("Level2_3");
+        }
+        else
+        {
+            StartCoroutine(PauseMainTheme());
+        }
+    }
+
+    public void Level3_1()
+    {
+        if (PlayerPrefs.GetInt("levelProgression") >= 8)
+        {
+            SceneManager.LoadScene("Level3_1");
+        }
+        else
+        {
+            StartCoroutine(PauseMainTheme());
+        }
+    }
+
+    public void Level3_2()
+    {
+        if (PlayerPrefs.GetInt("levelProgression") >= 9)
+        {
+            SceneManager.LoadScene("Level3_2");
+        }
+        else
+        {
+            StartCoroutine(PauseMainTheme());
+        }
+    }
+
+    public void Level3_3()
+    {
+        if (PlayerPrefs.GetInt("levelProgression") >= 10)
+        {
+            SceneManager.LoadScene("Level3_3");
         }
         else
         {

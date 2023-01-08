@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PrefsManager : MonoBehaviour
 {
+    // Script to initialise and deal with all the PlayerPrefs
     private float _2StarsTimer;
     private float _3StarsTimer;
     private float MeilleurTemps;
@@ -55,7 +56,7 @@ public class PrefsManager : MonoBehaviour
     public void ResetScore()
     {
         // Reset tous les timers à -1
-        for (int i=0; i < 8; i++)
+        for (int i=0; i < 11; i++)
         {
             PlayerPrefs.SetFloat("timerLevel" + i, -1);
         }
@@ -68,7 +69,7 @@ public class PrefsManager : MonoBehaviour
 
     private void SetTimers()
     {
-        for (int i=2; i<8; i++)
+        for (int i=2; i<11; i++)
         {
             switch (i)
             {
@@ -93,14 +94,30 @@ public class PrefsManager : MonoBehaviour
                     break;
 
                 case 6:
+                    _2StarsTimer = 40;
+                    _3StarsTimer = 25;
+                    break;
+
+                case 7:
                     _2StarsTimer = 35;
                     _3StarsTimer = 30;
                     break;
 
-                case 7:
+                case 8:
                     _2StarsTimer = 10;
                     _3StarsTimer = 9.65f;
                     break;
+
+                case 9:
+                    _2StarsTimer = 7;
+                    _3StarsTimer = 5.5f;
+                    break;
+
+                case 10:
+                    _2StarsTimer = 30;
+                    _3StarsTimer = 15;
+                    break;
+
             }
 
             PlayerPrefs.SetFloat("timer2stars" + i, _2StarsTimer);
@@ -112,7 +129,7 @@ public class PrefsManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("numberOfStars", 0);
 
-        for (int i =2; i<8; i++)
+        for (int i =2; i<11; i++)
         {
             // Get the best time for this level
             MeilleurTemps = PlayerPrefs.GetFloat("timerLevel" + i);

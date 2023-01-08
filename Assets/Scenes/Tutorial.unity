@@ -128,7 +128,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1904772408405652440, guid: 69b95cfe375e98447b864d3860e35767, type: 3}
@@ -187,6 +186,24 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7da1b533bf8552149a98909cbb303e7b, type: 2}
+    - target: {fileID: 4127469689730310032, guid: 69b95cfe375e98447b864d3860e35767, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127469690952994811, guid: 69b95cfe375e98447b864d3860e35767, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127469690952994811, guid: 69b95cfe375e98447b864d3860e35767, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127469691136681124, guid: 69b95cfe375e98447b864d3860e35767, type: 3}
+      propertyPath: m_text
+      value: "L'objectif est d'atteindre la zone verte\nTournez votre t\xE9l\xE9phone
+        et la plateau tournera de la m\xEAme fa\xE7on\nAppuyez sur l'\xE9cran pour
+        mettre la boule en mouvement"
+      objectReference: {fileID: 0}
     - target: {fileID: 5195107257797648383, guid: 69b95cfe375e98447b864d3860e35767, type: 3}
       propertyPath: m_Name
       value: Tutoriel Prefab
@@ -236,7 +253,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 671591445}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 69b95cfe375e98447b864d3860e35767, type: 3}
 --- !u!1 &317180514 stripped
 GameObject:
@@ -253,7 +269,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5784278927090935102, guid: fbc30cd90991bd243a0df80a3179adc1, type: 3}
@@ -353,7 +368,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: fbc30cd90991bd243a0df80a3179adc1, type: 3}
 --- !u!114 &671591444 stripped
 MonoBehaviour:
@@ -376,7 +390,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3992962731652655585, guid: 81857fe6e26ae534f912b1996f475693, type: 3}
@@ -468,7 +481,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 81857fe6e26ae534f912b1996f475693, type: 3}
 --- !u!114 &861899432 stripped
 MonoBehaviour:
@@ -486,7 +498,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 79996514193466847, guid: fdf91e287bd54594facf84ce6f3e7290, type: 3}
@@ -538,7 +549,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: fdf91e287bd54594facf84ce6f3e7290, type: 3}
 --- !u!82 &967454729 stripped
 AudioSource:
@@ -550,7 +560,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2603580965504390877, guid: facb7d516688ebf45b14498b0d129f25, type: 3}
@@ -674,7 +683,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: facb7d516688ebf45b14498b0d129f25, type: 3}
 --- !u!1 &1275376876 stripped
 GameObject:

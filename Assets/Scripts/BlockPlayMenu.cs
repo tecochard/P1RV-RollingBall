@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class BlockPlayMenu : MonoBehaviour
 {
+    // Script to prevent the player from pressing a button
+    // when the panel LevelLocked is there
+
     public Button Level1;
     public Button Level2;
     public Button Level3;

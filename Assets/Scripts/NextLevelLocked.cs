@@ -6,9 +6,11 @@ using UnityEngine.UI;
 
 public class NextLevelLocked : MonoBehaviour
 {
-    //Block access to the World2 at the end of the level 1.3 if not enough stars
+    // Script to block access to the next world if
+    // not enough stars are possessed
 
     private int nbOfStarsNeeded;
+    private int starsForNextWorld;
 
     private string NextLevelText;
     public Button NextLevelButton;
@@ -16,12 +18,24 @@ public class NextLevelLocked : MonoBehaviour
     private void Start()
     {
         NextLevelText = NextLevelButton.GetComponentInChildren<TextMeshProUGUI>().text;
+
+        // If the player has finished the level 2.1
+        // then it means that he needs to unlock the
+        // world 3 and not the world 2 anymore
+        if (PlayerPrefs.GetInt("levelProgression") < 6)
+        {
+            starsForNextWorld = 6;
+        }
+        else
+        {
+            starsForNextWorld = 13;
+        }
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        nbOfStarsNeeded = 6 - PlayerPrefs.GetInt("numberOfStars");
+        nbOfStarsNeeded = starsForNextWorld - PlayerPrefs.GetInt("numberOfStars");
         if (nbOfStarsNeeded == 1)
         {
             NextLevelButton.interactable = false;
