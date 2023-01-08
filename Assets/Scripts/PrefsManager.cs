@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PrefsManager : MonoBehaviour
 {
+    // Script to initialise and deal with all the PlayerPrefs
     private float _2StarsTimer;
     private float _3StarsTimer;
     private float MeilleurTemps;

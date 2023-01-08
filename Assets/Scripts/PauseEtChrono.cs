@@ -7,8 +7,11 @@ using TMPro;
 
 public class PauseEtChrono : MonoBehaviour
 {
-    [SerializeField] GameObject MenuPause;
-    [SerializeField] TextMeshProUGUI ChronoText;
+    // Script to take a break, deal with the chrono
+    // and restart the game if the player keeps he's finger pressed
+
+    public GameObject MenuPause;
+    public TextMeshProUGUI ChronoText;
     public GameObject Player;
 
     private Rigidbody rig_player;
@@ -38,7 +41,6 @@ public class PauseEtChrono : MonoBehaviour
     private void StartingPause()
     {
         rig_player.isKinematic = true;
-        //Time.timeScale = 0f;
     }
 
     private void Pause()

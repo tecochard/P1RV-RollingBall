@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class NextLevelLocked : MonoBehaviour
 {
-    // Script to block access to the next world if not enough stars
+    // Script to block access to the next world if
+    // not enough stars are possessed
 
     private int nbOfStarsNeeded;
     private int starsForNextWorld;

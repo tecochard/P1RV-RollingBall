@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
-    [SerializeField] Slider volumeSlider;
+    // Script to save and load the volume chose by the player
+    public Slider volumeSlider;
 
     void Awake()
     {
@@ -19,7 +20,6 @@ public class SoundManager : MonoBehaviour
         {
             Load();
         }
-        Debug.Log("start");
     }
 
     #region MusicManager
@@ -39,6 +39,4 @@ public class SoundManager : MonoBehaviour
         PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
     }
     #endregion
-
-    // TODO Gerer les soundseffect boule qui roule etc
 }

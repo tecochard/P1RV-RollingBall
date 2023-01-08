@@ -6,7 +6,8 @@ using TMPro;
 
 public class ShowHighScore : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI CeText;
+    // Script to show the current HighScores in the HighScoreMenu
+    public TextMeshProUGUI CeText;
 
     private float _level;
     private float _highscore;

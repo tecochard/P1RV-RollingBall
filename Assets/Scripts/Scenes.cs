@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class Scenes : MonoBehaviour
 {
-    [SerializeField] AudioSource Nononon;
-    [SerializeField] AudioSource MainTheme;
-    [SerializeField] GameObject PanelLevelLocked;
+    // Script to manage the passage from different scenes
+
+    public AudioSource Nononon;
+    public AudioSource MainTheme;
+    public GameObject PanelLevelLocked;
 
     private int thisScene;
 
