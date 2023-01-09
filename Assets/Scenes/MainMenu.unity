@@ -6093,9 +6093,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextStarsNeeded: {fileID: 675593199}
-  Level1: {fileID: 0}
-  Level2: {fileID: 0}
-  Level3: {fileID: 0}
+  Level1: {fileID: 1537768363}
+  Level2: {fileID: 625365972}
+  Level3: {fileID: 847559729}
 --- !u!1 &782699057
 GameObject:
   m_ObjectHideFlags: 0
@@ -6554,7 +6554,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.8593, y: 35.328}
+  m_AnchoredPosition: {x: 1.859314, y: 35.328003}
   m_SizeDelta: {x: -196.2814, y: -270.6559}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &883278123
@@ -9332,7 +9332,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1307880694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13859,7 +13859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1916110574
 MonoBehaviour:
   m_ObjectHideFlags: 0
