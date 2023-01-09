@@ -10,42 +10,57 @@ public class Collision : MonoBehaviour
     [Header("Joueur")]
     public GameObject Player;
     public GameObject GyroController;
+    public Material PlayerMaterial;
+    public Material FallenMaterial;
 
     private Rigidbody rig_player;
     static public bool hasFallen;
     static public bool clignote;
 
+    private Material oldMaterial;
+    private Renderer m_playerRenderer;
     private Color m_playerColor;
     private Vector3 _playerPosDepart;
 
     void Start()
     {
-        //Player
+        // Physic
         _playerPosDepart = Player.transform.localPosition;
         rig_player = Player.GetComponent<Rigidbody>();
-        //Couleur
-        m_playerColor = Player.GetComponent<Renderer>().material.color;
+
+        // Renderer
+        m_playerRenderer = Player.GetComponent<Renderer>();
     }
 
     IEnumerator Clignoter()
     {
         for (int i=0; i<3; i++)
         {
-            var Renderer = Player.GetComponent<Renderer>();
+            m_playerColor = Player.GetComponent<Renderer>().material.color;
             m_playerColor.a = 0.5f;
-            Renderer.material.SetColor("_Color", m_playerColor);
+            m_playerRenderer.material.SetColor("_Color", m_playerColor);
             yield return new WaitForSeconds(0.3f);
             m_playerColor.a = 1.0f;
-            Renderer.material.SetColor("_Color", m_playerColor); 
+            m_playerRenderer.material.SetColor("_Color", m_playerColor); 
             yield return new WaitForSeconds(0.3f);
 
         }
         clignote = false;
+
+        // and reset the texture
+        m_playerRenderer.material = oldMaterial;
     }
 
     private void OnCollisionEnter(UnityEngine.Collision collision)
     {
         print("collision");
+
+        // Get the current texture of the ball
+        oldMaterial = m_playerRenderer.material;
+
+        Debug.Log(oldMaterial.name);
+        // Give a different texture to show that the ball is not moving
+        m_playerRenderer.material = FallenMaterial;
 
         // On remet le joueur au debut du niveau et sans vitesse;
         Player.transform.localPosition = _playerPosDepart;
@@ -62,12 +77,14 @@ public class Collision : MonoBehaviour
     }
 
     void Update()
-    {
+    {        
         if (hasFallen == true && Input.touchCount > 0)
         {
-            // On laisse la boule bouger
+            // If player touchs the screen, we let the ball move again
             rig_player.isKinematic = false;
             hasFallen = false;
-        }
+
+
+        }     
     }
 }
