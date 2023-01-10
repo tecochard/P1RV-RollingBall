@@ -30,6 +30,7 @@ public class Collision : MonoBehaviour
 
         // Renderer
         m_playerRenderer = Player.GetComponent<Renderer>();
+        m_playerRenderer.material = PlayerMaterial;
     }
 
     IEnumerator Clignoter()
@@ -83,8 +84,6 @@ public class Collision : MonoBehaviour
             // If player touchs the screen, we let the ball move again
             rig_player.isKinematic = false;
             hasFallen = false;
-
-
         }     
     }
 }

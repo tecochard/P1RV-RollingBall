@@ -45,6 +45,7 @@ public class Scenes : MonoBehaviour
         // Load the scene of the next level and unload the current scene
         thisScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(thisScene + 1);
+        SceneManager.UnloadSceneAsync(thisScene);
     }
 
 
