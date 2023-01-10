@@ -22,8 +22,6 @@ public class WorldLocked : MonoBehaviour
             // Show the number of stars needed for World2
             nbOfStarsNeeded = 6 - PlayerPrefs.GetInt("numberOfStars");
 
-            Debug.Log(nbOfStarsNeeded);
-
             if (nbOfStarsNeeded > 0)
             {
                 TextStarsNeeded.text = "X " + nbOfStarsNeeded;
@@ -45,8 +43,6 @@ public class WorldLocked : MonoBehaviour
             // Show the number of stars needed for World3
             nbOfStarsNeeded = 12 - PlayerPrefs.GetInt("numberOfStars");
 
-            Debug.Log(nbOfStarsNeeded);
-
             if (nbOfStarsNeeded > 0)
             {
                 TextStarsNeeded.text = "X " + nbOfStarsNeeded;
@@ -62,6 +58,5 @@ public class WorldLocked : MonoBehaviour
                 Level3.interactable = true;
             }
         }
-
     }
 }

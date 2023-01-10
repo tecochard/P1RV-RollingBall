@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1845116494}
-  m_IndirectSpecularColor: {r: 0.312913, g: 0.6289218, b: 0.85830283, a: 1}
+  m_IndirectSpecularColor: {r: 0.31269324, g: 0.6285678, b: 0.85815734, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -421,7 +421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd502c14a4171a0479abb16d05d7e3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 1097395040}
 --- !u!1001 &702812140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1136,6 +1135,10 @@ PrefabInstance:
       propertyPath: SaveForTheLevel
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5094428260059102953, guid: 7005383fe2f96504997d6f3138f43c04, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 40044e80f9674fa4e81c7ddd58ef3919, type: 2}
     - target: {fileID: 5798385031132564179, guid: 7005383fe2f96504997d6f3138f43c04, type: 3}
       propertyPath: SaveForTheLevel
       value: 

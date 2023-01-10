@@ -93,6 +93,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SideBounds (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4278301548481537445, guid: 7f8ff20b2a5eae74eb5b17fb56eb54a8, type: 3}
+      propertyPath: FallenMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a7a0c7cb51bc4d84b816bcc6743564a8, type: 2}
+    - target: {fileID: 4278301548481537445, guid: 7f8ff20b2a5eae74eb5b17fb56eb54a8, type: 3}
+      propertyPath: PlayerMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 40044e80f9674fa4e81c7ddd58ef3919, type: 2}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f8ff20b2a5eae74eb5b17fb56eb54a8, type: 3}
@@ -157,6 +165,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SideBounds (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4278301548481537445, guid: 7f8ff20b2a5eae74eb5b17fb56eb54a8, type: 3}
+      propertyPath: FallenMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a7a0c7cb51bc4d84b816bcc6743564a8, type: 2}
+    - target: {fileID: 4278301548481537445, guid: 7f8ff20b2a5eae74eb5b17fb56eb54a8, type: 3}
+      propertyPath: PlayerMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 40044e80f9674fa4e81c7ddd58ef3919, type: 2}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f8ff20b2a5eae74eb5b17fb56eb54a8, type: 3}
@@ -177,6 +193,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: UpBound
       objectReference: {fileID: 0}
+    - target: {fileID: 5509291872997525346, guid: 7ab0be2f828f31c44a968a03907eac4f, type: 3}
+      propertyPath: FallenMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a7a0c7cb51bc4d84b816bcc6743564a8, type: 2}
+    - target: {fileID: 5509291872997525346, guid: 7ab0be2f828f31c44a968a03907eac4f, type: 3}
+      propertyPath: PlayerMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 40044e80f9674fa4e81c7ddd58ef3919, type: 2}
     - target: {fileID: 6197664642056615582, guid: 7ab0be2f828f31c44a968a03907eac4f, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -241,6 +265,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: UpBound (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5509291872997525346, guid: 7ab0be2f828f31c44a968a03907eac4f, type: 3}
+      propertyPath: FallenMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a7a0c7cb51bc4d84b816bcc6743564a8, type: 2}
+    - target: {fileID: 5509291872997525346, guid: 7ab0be2f828f31c44a968a03907eac4f, type: 3}
+      propertyPath: PlayerMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 40044e80f9674fa4e81c7ddd58ef3919, type: 2}
     - target: {fileID: 6197664642056615582, guid: 7ab0be2f828f31c44a968a03907eac4f, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -349,6 +381,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SideBounds (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4278301548481537445, guid: 7f8ff20b2a5eae74eb5b17fb56eb54a8, type: 3}
+      propertyPath: FallenMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a7a0c7cb51bc4d84b816bcc6743564a8, type: 2}
+    - target: {fileID: 4278301548481537445, guid: 7f8ff20b2a5eae74eb5b17fb56eb54a8, type: 3}
+      propertyPath: PlayerMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 40044e80f9674fa4e81c7ddd58ef3919, type: 2}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f8ff20b2a5eae74eb5b17fb56eb54a8, type: 3}
@@ -413,6 +453,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SideBounds
       objectReference: {fileID: 0}
+    - target: {fileID: 4278301548481537445, guid: 7f8ff20b2a5eae74eb5b17fb56eb54a8, type: 3}
+      propertyPath: FallenMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a7a0c7cb51bc4d84b816bcc6743564a8, type: 2}
+    - target: {fileID: 4278301548481537445, guid: 7f8ff20b2a5eae74eb5b17fb56eb54a8, type: 3}
+      propertyPath: PlayerMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 40044e80f9674fa4e81c7ddd58ef3919, type: 2}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f8ff20b2a5eae74eb5b17fb56eb54a8, type: 3}
