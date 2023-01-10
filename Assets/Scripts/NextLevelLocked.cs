@@ -35,6 +35,9 @@ public class NextLevelLocked : MonoBehaviour
 
     void Update()
     {
+        // Met à jour le nombre d'étoiles possédées
+        PrefsManager.SetNumberOfStars();
+
         nbOfStarsNeeded = starsForNextWorld - PlayerPrefs.GetInt("numberOfStars");
         if (nbOfStarsNeeded == 1)
         {

@@ -14,7 +14,6 @@ public class WorldLocked : MonoBehaviour
     public Button Level2;
     public Button Level3;
 
-    // Start is called before the first frame update
     void Update()
     {
         if (this.gameObject.name == "PanelWorld2Locked")
