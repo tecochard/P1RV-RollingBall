@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2884479986128453843}
   - component: {fileID: 2884479986128453842}
   - component: {fileID: 8612414771876479658}
+  - component: {fileID: 2211325934275617763}
   m_Layer: 0
   m_Name: GyroController
   m_TagString: Untagged
@@ -47,7 +48,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd35f75883517244f9b77f740be47842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseRotation: {x: 0, y: 0, z: 0, w: 1}
   angleMax: 30
 --- !u!114 &8612414771876479658
 MonoBehaviour:
@@ -64,6 +64,18 @@ MonoBehaviour:
   MenuPause: {fileID: 0}
   ChronoText: {fileID: 0}
   Player: {fileID: 8887169278916058305}
+--- !u!114 &2211325934275617763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2884479986128453805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b598476f5bc54299e8f53884db6a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2884479984954258408
 PrefabInstance:
   m_ObjectHideFlags: 0

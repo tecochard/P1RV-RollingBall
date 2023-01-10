@@ -6,9 +6,7 @@ public class PrefsManager : MonoBehaviour
 {
     // Script to initialise and deal with all the PlayerPrefs
     private float _2StarsTimer;
-    private float _3StarsTimer;
-    private float MeilleurTemps;
-    private int _nbOfStarsAdded; 
+    private float _3StarsTimer; 
 
     // Start is called before the first frame update
     void Start()
@@ -125,8 +123,11 @@ public class PrefsManager : MonoBehaviour
         }
     }
 
-    public void SetNumberOfStars()
+    public static void SetNumberOfStars()
     {
+        float MeilleurTemps;
+        int _nbOfStarsAdded;
+        // On initialise le nombre total d'étoiles
         PlayerPrefs.SetInt("numberOfStars", 0);
 
         for (int i =2; i<11; i++)

@@ -17,7 +17,15 @@ public class Scenes : MonoBehaviour
     // Retourner au MainMenu
     public void MainMenu()
     {
+        // Load the scene MainMenu and unload the current scene
+        thisScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene("MainMenu");
+
+        //
+        // LA LIGNE MIRACULEUSE     !!!!!!!
+        Time.timeScale = 1.0f;
+        // c'est cette oubli de remettre le timescale à 1 qui nous posait
+        // des problèmes lors des chargements de scène !
     }
 
     public void Tutorial()
@@ -34,9 +42,9 @@ public class Scenes : MonoBehaviour
     // Passer au niveau suivant
     public void NextLevel()
     {
+        // Load the scene of the next level and unload the current scene
         thisScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(thisScene + 1);
-        SceneManager.UnloadSceneAsync(thisScene);
     }
 
 

@@ -75,12 +75,13 @@ public class PauseEtChrono : MonoBehaviour
                 if (Input.touchCount == 1)
                 {
                     tempsRestart += Time.deltaTime;
-                    // On change la couleur du joueur (sauf si sur le level 2_2)
-                    if (SceneManager.GetActiveScene().buildIndex != 7)
+                    // On change la couleur du joueur (sauf si sur les levels 2_2 et 2_3)
+                    if (SceneManager.GetActiveScene().buildIndex != 7 && SceneManager.GetActiveScene().buildIndex != 6)
                     {
                         color = -Mathf.Pow(tempsRestart, 2) / 4 + 1;
                         m_player.SetColor("_Color", new Color(color, color, color, m_player.color.a));
                     }
+                    // Et si le joueur maintient suffisament longtemps, alors on recharge la scène
                     if (tempsRestart > 1.5)
                     {
                         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -90,7 +91,7 @@ public class PauseEtChrono : MonoBehaviour
                 else
                 {
                     tempsRestart = 0f;
-                    if (SceneManager.GetActiveScene().buildIndex != 7)
+                    if (SceneManager.GetActiveScene().buildIndex != 7 && SceneManager.GetActiveScene().buildIndex !=6)
                     {
                         m_player.SetColor("_Color", c_player);
                     }
@@ -101,7 +102,6 @@ public class PauseEtChrono : MonoBehaviour
         else if (canStart && Input.touchCount == 1)
         {
             rig_player.isKinematic = false;
-            //Time.timeScale = 1f;
             temps = 0f;
             hasStarted = true;
         }
