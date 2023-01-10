@@ -91,7 +91,7 @@ public class PauseEtChrono : MonoBehaviour
                 else
                 {
                     tempsRestart = 0f;
-                    if (SceneManager.GetActiveScene().buildIndex != 7)
+                    if (SceneManager.GetActiveScene().buildIndex != 7 && SceneManager.GetActiveScene().buildIndex !=6)
                     {
                         m_player.SetColor("_Color", c_player);
                     }
