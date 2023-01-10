@@ -1235,6 +1235,10 @@ PrefabInstance:
       propertyPath: GyroController
       value: 
       objectReference: {fileID: 1480362729}
+    - target: {fileID: 5094428260059102953, guid: 7005383fe2f96504997d6f3138f43c04, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 40044e80f9674fa4e81c7ddd58ef3919, type: 2}
     - target: {fileID: 5928772480585464453, guid: 7005383fe2f96504997d6f3138f43c04, type: 3}
       propertyPath: Player
       value: 

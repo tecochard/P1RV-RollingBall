@@ -835,10 +835,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6445856630904790487, guid: b0d3180be574c934281c017b1cec2631, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff6d959e17c19fb4e9b77e5783003c5e, type: 2}
+    - target: {fileID: -4683669308469848369, guid: b0d3180be574c934281c017b1cec2631, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff6d959e17c19fb4e9b77e5783003c5e, type: 2}
     - target: {fileID: 919132149155446097, guid: b0d3180be574c934281c017b1cec2631, type: 3}
       propertyPath: m_Name
       value: CloudLvl_v2
       objectReference: {fileID: 0}
+    - target: {fileID: 4832442578280844508, guid: b0d3180be574c934281c017b1cec2631, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff6d959e17c19fb4e9b77e5783003c5e, type: 2}
+    - target: {fileID: 8099996893489682644, guid: b0d3180be574c934281c017b1cec2631, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff6d959e17c19fb4e9b77e5783003c5e, type: 2}
+    - target: {fileID: 8338916164291688021, guid: b0d3180be574c934281c017b1cec2631, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff6d959e17c19fb4e9b77e5783003c5e, type: 2}
+    - target: {fileID: 8521902485874960664, guid: b0d3180be574c934281c017b1cec2631, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff6d959e17c19fb4e9b77e5783003c5e, type: 2}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: b0d3180be574c934281c017b1cec2631, type: 3}
@@ -1157,6 +1181,10 @@ PrefabInstance:
       propertyPath: GyroController
       value: 
       objectReference: {fileID: 1480362729}
+    - target: {fileID: 5094428260059102953, guid: 7005383fe2f96504997d6f3138f43c04, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 40044e80f9674fa4e81c7ddd58ef3919, type: 2}
     - target: {fileID: 5928772480585464453, guid: 7005383fe2f96504997d6f3138f43c04, type: 3}
       propertyPath: Player
       value: 
