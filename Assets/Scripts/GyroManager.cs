@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GyroManager : MonoBehaviour
 {
-    // Permet de creer une instance de GyroManager s'il n'en existe pas
-    // Ou de recuperer une instance qui existerait deja
+    // Old script not used anymore.
+    // We didn't want to delete it, just in case...
     #region Instance
     private static GyroManager instance;
     public static GyroManager Instance
