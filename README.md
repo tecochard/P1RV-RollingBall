@@ -10,3 +10,5 @@ Pour pouvoir interagir avec la scéne depuis le smartphone :
  - installer Unity Remote 5 depuis l'app store de votre mobile;
  - mettre le téléphone en mode développeur;
  - installer les modules nécessaires sur Unity.
+
+Lien tutoriel Youtube : https://www.youtube.com/watch?v=VHkKzlzo-rw
