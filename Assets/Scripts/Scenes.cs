@@ -24,7 +24,7 @@ public class Scenes : MonoBehaviour
         //
         // LA LIGNE MIRACULEUSE     !!!!!!!
         Time.timeScale = 1.0f;
-        // c'est cette oubli de remettre le timescale à 1 qui nous posait
+        // c'est cet oubli de remettre le timescale à 1 qui nous posait
         // des problèmes lors des chargements de scène !
     }
 
