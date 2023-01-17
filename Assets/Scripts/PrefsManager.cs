@@ -11,7 +11,7 @@ public class PrefsManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SetTimers();
+        /*SetTimers();
         SetNumberOfStars();
 
         // Initialisation de tous les parametres joueurs lors du 1er lancement du jeu 
@@ -23,7 +23,11 @@ public class PrefsManager : MonoBehaviour
             ResetNumberOfStars();
         }
 
-        PlayerPrefs.SetInt("Initialised", 1);
+        PlayerPrefs.SetInt("Initialised", 1);*/
+
+        // - FOR THE DEMO -
+        PlayerPrefs.SetInt("levelProgression", 10);
+        PlayerPrefs.SetInt("numberOfStars", 30);
     }
 
     public void ResetMusicChoice()
